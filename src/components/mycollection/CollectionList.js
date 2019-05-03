@@ -23,6 +23,7 @@ export default class CollectionList extends Component {
                         <div>
                         {record.artistName}
                         {record.albumTitle}
+                        {record.year}
                         {record.condition}
                         {record.date}
                         <button

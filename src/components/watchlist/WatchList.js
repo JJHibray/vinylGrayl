@@ -36,6 +36,7 @@ export default class WatchList extends Component {
                         <div>
                         {record.artistName}
                         {record.albumTitle}
+                        {record.year}
                         {record.condition}
                         {record.date}
                         <button
