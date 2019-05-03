@@ -7,20 +7,25 @@ import CollectionForm from "./mycollection/CollectionForm";
 import WatchList from "./watchlist/WatchList"
 import WatchListForm from "./watchlist/WatchListForm"
 import EditWatchList from "./watchlist/EditWatchList"
+import HolyGraylList from "./holygrayl/HolyGraylList"
+import HolyGraylForm from "./holygrayl/HolyGraylForm"
+import EditHolyGrayl from "./holygrayl/EditHolyGrayl"
 
 export default class ApplicationViews extends Component {
 
     state = {
       "users": [],
       "myCollection": [],
-      "watchList":[]
+      "watchList":[],
+      "holyGrayl":[]
     }
 
 componentDidMount() {
     CollectionManager.getAllRecords().then(allRecords => {
         this.setState({
             myCollection: allRecords,
-            watchlist: allRecords
+            watchlist: allRecords,
+            holyGrayl: allRecords
         })
     })
 }
@@ -31,7 +36,8 @@ addRecord = record => {
     .then(allRecords =>
       this.setState({
         myCollection: allRecords,
-        watchList: allRecords
+        watchList: allRecords,
+        holyGrayl: allRecords
       })
     )
    }
@@ -39,7 +45,8 @@ addRecord = record => {
        return CollectionManager.removeAndListRecords(id)
        .then(allRecords => this.setState({
         myCollection: allRecords,
-        watchList: allRecords
+        watchList: allRecords,
+        holyGrayl: allRecords
        })
        )
    }
@@ -50,7 +57,8 @@ addRecord = record => {
     .then(record => {
       this.setState({
         myCollection: record,
-        watchList: record
+        watchList: record,
+        holyGrayl: record
       })
     });
   };
@@ -88,6 +96,24 @@ render() {
         <Route
           path="/watchlist/:recordId(\d+)/edit" render={props => {
             return <EditWatchList {...props} myCollection={this.state.articles}
+             editRecord={this.editRecord}
+             />
+         }}
+        />
+        <Route exact path="/holyGrayl" render={(props) => {
+                return <HolyGraylList {...props}
+                holyGrayl={this.state.watchList}
+                deleteRecord={this.deleteRecord}
+                myCollection={this.state.myCollection}
+                />
+                }} />
+        <Route exact path="/holyGrayl/new" render={(props) => {
+            return <HolyGraylForm {...props} myCollection={this.state.myCollection}
+            addRecord={this.addRecord} />
+        }} />
+        <Route
+          path="/holyGrayl/:recordId(\d+)/edit" render={props => {
+            return <EditHolyGrayl {...props} myCollection={this.state.articles}
              editRecord={this.editRecord}
              />
          }}

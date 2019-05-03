@@ -1,26 +1,26 @@
 import React, { Component } from "react";
 
 
-export default class WatchList extends Component {
+export default class HolyGraylList extends Component {
     state = {
-        watchList: true
+        holyGrayl: true
     }
 
     handleAddCollection(){
         this.setState({
-            watchList: false
+            holyGrayl: false
         })
         this.props.history.push(`/myCollection`)
     }
     render () {
         return (
             <article className="header">
-            <h1>Watchlist</h1>
+            <h1>Holy Grayl</h1>
             <div className="AddButton">
                     <button type="button"
                             className="btn btn-success"
                             onClick={() => {
-                                this.props.history.push("/watchlist/new")}
+                                this.props.history.push("/holyGrayl/new")}
                             }
                             >
                         Add Record
@@ -28,7 +28,7 @@ export default class WatchList extends Component {
                 </div>
                 <section className="content Vinyl">
                 {
-                this.props.myCollection.filter(record => record.watchList === true)
+                this.props.myCollection.filter(record => record.holyGrayl === true)
                 .map(record =>
 
                     <div key={record.id}>
@@ -42,7 +42,7 @@ export default class WatchList extends Component {
                                     onClick={() => this.props.deleteRecord(record.id)}
                                     className="card-delete">Delete</button>
                                     <button
-                                    onClick={() => this.props.history.push(`/watchlist/${record.id}/edit`)}
+                                    onClick={() => this.props.history.push(`/holyGrayl/${record.id}/edit`)}
                                     className="card-edit">Edit</button>
                                     <button
                                     onClick={this.handleAddCollection}

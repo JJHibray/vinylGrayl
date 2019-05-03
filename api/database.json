@@ -54,11 +54,11 @@
     },
     {
       "id": 5,
-      "artistName": "Yeah Yeah Yeahs",
+      "artistName": "Yeah Yeah Yeah",
       "albumTitle": "Gold Lion",
       "condition": "vg",
-      "watchList": true,
-      "holyGrayl": false
+      "watchList": false,
+      "holyGrayl": true
     }
   ]
 }
