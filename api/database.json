@@ -1,0 +1,64 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Clif",
+      "email": "clifmatski@gmail.com",
+      "password": "Clifmatski1"
+    },
+    {
+      "id": 2,
+      "name": "Josh",
+      "email": "hipsterbro@gmail.com",
+      "password": "yourmom"
+    }
+  ],
+  "myCollection": [
+    {
+      "id": 1,
+      "artistName": "Ryan Adams",
+      "albumTitle": "Gold",
+      "byDate": "2019-04-25",
+      "condition": "NM",
+      "image": "",
+      "watchList": false,
+      "holyGrayl": false
+    },
+    {
+      "id": 2,
+      "artistName": "Pink Floyd",
+      "albumTitle": "Darkside of the Moon",
+      "byDate": "2019-04-25",
+      "image": "",
+      "condition": "EX",
+      "watchList": true,
+      "holyGrayl": false
+    },
+    {
+      "id": 3,
+      "artistName": "Beatles",
+      "albumTitle": "Abbey Road",
+      "byDate": "2019-04-25",
+      "image": "",
+      "condition": "NM",
+      "watchList": false,
+      "holyGrayl": false
+    },
+    {
+      "id": 4,
+      "artistName": "Bruce Springsteen",
+      "albumTitle": "Born in the USA",
+      "condition": "Mint",
+      "watchList": false,
+      "holyGrayl": false
+    },
+    {
+      "id": 5,
+      "artistName": "Yeah Yeah Yeahs",
+      "albumTitle": "Gold Lion",
+      "condition": "vg",
+      "watchList": true,
+      "holyGrayl": false
+    }
+  ]
+}
