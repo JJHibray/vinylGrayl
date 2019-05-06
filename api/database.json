@@ -31,7 +31,7 @@
       "byDate": "2019-04-25",
       "image": "",
       "condition": "EX",
-      "watchList": true,
+      "watchList": false,
       "holyGrayl": false
     },
     {
@@ -58,7 +58,44 @@
       "albumTitle": "Gold Lion",
       "condition": "vg",
       "watchList": false,
-      "holyGrayl": true
+      "holyGrayl": false
+    },
+    {
+      "artistName": "Van Halen",
+      "albumTitle": "Van Halen II",
+      "year": "1982",
+      "condition": "vg +",
+      "watchList": false,
+      "holyGrayl": false,
+      "date": "2019-05-03T18:48:51.841Z",
+      "id": 6
+    },
+    {
+      "artistName": "Steely Dan",
+      "albumTitle": "greatest hits",
+      "condition": "mint",
+      "watchList": false,
+      "holyGrayl": false,
+      "date": "2019-05-03T18:50:34.663Z",
+      "id": 7
+    },
+    {
+      "id": 8,
+      "artistName": "queen",
+      "albumTitle": " queen II",
+      "year": " 1985",
+      "condition": " poor",
+      "watchList": false,
+      "holyGrayl": false
+    },
+    {
+      "id": 9,
+      "artistName": "Queen",
+      "albumTitle": " Queen I",
+      "year": " 1976",
+      "condition": " vg+ ",
+      "watchList": false,
+      "holyGrayl": false
     }
   ]
 }

@@ -5,6 +5,7 @@ export default class CollectionForm extends Component {
     state = {
       artistName: "",
       albumTitle: "",
+      year:"",
       condition: "",
     };
 
@@ -20,6 +21,7 @@ export default class CollectionForm extends Component {
         const record = {
         artistName: this.state.artistName,
         albumTitle: this.state.albumTitle,
+        year: this.state.year,
         condition: this.state.condition,
         watchList: true,
         holyGrayl: false,
@@ -57,6 +59,17 @@ export default class CollectionForm extends Component {
                   onChange={this.handleFieldChange}
                   id="albumTitle"
                   placeholder="Album Title"
+                />
+              </div>
+              <div className="form-group">
+                <label htmlFor="year">Year</label>
+                <input
+                  type="text"
+                  required
+                  className="form-control"
+                  onChange={this.handleFieldChange}
+                  id="year"
+                  placeholder="Year of Issue"
                 />
               </div>
               <div className="form-group">

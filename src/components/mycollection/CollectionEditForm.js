@@ -6,6 +6,7 @@ export default class CollectionEditForm extends Component {
 state = {
     artistName:"",
     albumTitle:"",
+    year:"",
     condition:""
 }
 
@@ -25,6 +26,7 @@ updateExistingRecords = evt => {
         id: this.props.match.params.recordId,
         artistName: this.state.artistName,
         albumTitle: this.state.albumTitle,
+        year: this.state.year,
         condition: this.state.condition,
         watchList: false,
         holyGrayl: false
@@ -40,6 +42,7 @@ componentDidMount() {
       this.setState({
         artistName: record.artistName,
         albumTitle: record.albumTitle,
+        year: record.year,
         condition: record.condition
       });
     });
@@ -71,6 +74,17 @@ render() { console.log(this.props.myCollection)
               value= {this.state.albumTitle}
             />
           </div>
+          <div className="form-group">
+                <label htmlFor="year">Year</label>
+                <input
+                  type="text"
+                  required
+                  className="form-control"
+                  onChange={this.handleFieldChange}
+                  id="year"
+                  value= {this.state.year}
+                />
+              </div>
           <div className="form-group">
             <label htmlFor="condition">URL</label>
             <input
