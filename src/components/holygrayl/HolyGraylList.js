@@ -6,12 +6,24 @@ export default class HolyGraylList extends Component {
         holyGrayl: true
     }
 
-    handleAddCollection(){
-        this.setState({
-            holyGrayl: false
-        })
-        this.props.history.push(`/myCollection`)
-    }
+    handleAddToCollection = evt => {
+        evt.preventDefault()
+        let recordId = evt.target.id
+        const patchedRecord = {
+        id: parseInt(recordId),
+        holyGrayl: false
+        }
+        console.log(patchedRecord)
+        this.props.addToCollection(patchedRecord)
+        .then(() => this.props.history.push("/holyGrayl"))
+     }
+
+    // handleAddCollection(){
+    //     this.setState({
+    //         holyGrayl: false
+    //     })
+        // this.props.history.push(`/myCollection`)
+
     render () {
         return (
             <article className="header">
@@ -46,8 +58,8 @@ export default class HolyGraylList extends Component {
                                     onClick={() => this.props.history.push(`/holyGrayl/${record.id}/edit`)}
                                     className="card-edit">Edit</button>
                                     <button
-                                    onClick={this.handleAddCollection}
-                                    className="card-edit">Add to Collection</button>
+                                    onClick={this.handleAddToCollection}
+                                    className="card-edit" id={record.id}>Add to Collection</button>
                         </div>
                     </div>
 

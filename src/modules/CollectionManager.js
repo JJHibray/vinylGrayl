@@ -34,7 +34,16 @@ putRecord(editedRecord) {
     },
     body: JSON.stringify(editedRecord)
   }).then(data => data.json());
-}
+},
 
+patchRecord(editedRecord) {
+  return fetch(`${remoteURL}/myCollection/${editedRecord.id}`, {
+    method: "PATCH",
+    headers: {
+      "Content-Type": "application/json"
+    },
+    body:JSON.stringify(editedRecord)
+  }).then(data => data.json());
+}
 
 }

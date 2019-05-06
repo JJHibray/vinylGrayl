@@ -6,12 +6,19 @@ export default class WatchList extends Component {
         watchList: true
     }
 
-    handleAddCollection(){
-        this.setState({
-            watchList: false
-        })
-        this.props.history.push(`/myCollection`)
-    }
+
+    handleAddToCollection = evt => {
+        evt.preventDefault()
+        let recordId = evt.target.id
+        const patchedRecord = {
+        id: parseInt(recordId),
+        watchList: false
+        }
+        console.log(patchedRecord)
+        this.props.addToCollection(patchedRecord)
+        .then(() => this.props.history.push("/watchList"))
+     }
+
     render () {
         return (
             <article className="header">
@@ -46,8 +53,9 @@ export default class WatchList extends Component {
                                     onClick={() => this.props.history.push(`/watchlist/${record.id}/edit`)}
                                     className="card-edit">Edit</button>
                                     <button
-                                    onClick={this.handleAddCollection}
-                                    className="card-edit">Add to Collection</button>
+                                    type="submit"
+                                    onClick={this.handleAddToCollection}
+                                    className="card-edit" id={record.id}>Add to Collection</button>
                         </div>
                     </div>
 

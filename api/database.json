@@ -31,7 +31,7 @@
       "byDate": "2019-04-25",
       "image": "",
       "condition": "EX",
-      "watchList": true,
+      "watchList": false,
       "holyGrayl": false
     },
     {
@@ -58,7 +58,7 @@
       "albumTitle": "Gold Lion",
       "condition": "vg",
       "watchList": false,
-      "holyGrayl": true
+      "holyGrayl": false
     },
     {
       "artistName": "Van Halen",
@@ -74,7 +74,7 @@
       "artistName": "Steely Dan",
       "albumTitle": "greatest hits",
       "condition": "mint",
-      "watchList": true,
+      "watchList": false,
       "holyGrayl": false,
       "date": "2019-05-03T18:50:34.663Z",
       "id": 7
@@ -91,10 +91,10 @@
     {
       "id": 9,
       "artistName": "Queen",
-      "albumTitle": " Bicycle",
+      "albumTitle": " Queen I",
       "year": " 1976",
       "condition": " vg+ ",
-      "watchList": true,
+      "watchList": false,
       "holyGrayl": false
     }
   ]

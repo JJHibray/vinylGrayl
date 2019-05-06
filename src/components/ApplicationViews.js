@@ -61,9 +61,20 @@ addRecord = record => {
         holyGrayl: record
       })
     });
+
   };
 
-
+  addToCollection = (patchedRecord) => {
+  return CollectionManager.patchRecord(patchedRecord)
+  .then(() => CollectionManager.getAllRecords())
+  .then(record => {
+    this.setState({
+      myCollection: record,
+      watchList: record,
+      holyGrayl: record
+    })
+  });
+  }
 
 render() {
     return (
@@ -86,6 +97,7 @@ render() {
                 return <WatchList {...props}
                 watchList={this.state.watchList}
                 deleteRecord={this.deleteRecord}
+                addToCollection={this.addToCollection}
                 myCollection={this.state.myCollection}
                 />
                 }} />
@@ -105,6 +117,7 @@ render() {
                 holyGrayl={this.state.watchList}
                 deleteRecord={this.deleteRecord}
                 myCollection={this.state.myCollection}
+                addToCollection={this.addToCollection}
                 />
                 }} />
         <Route exact path="/holyGrayl/new" render={(props) => {
