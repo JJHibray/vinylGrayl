@@ -2,100 +2,70 @@
   "users": [
     {
       "id": 1,
-      "name": "Clif",
-      "email": "clifmatski@gmail.com",
-      "password": "Clifmatski1"
+      "name": "John",
+      "email": "John@gmail.com",
+      "password": "John"
     },
     {
-      "id": 2,
       "name": "Josh",
-      "email": "hipsterbro@gmail.com",
-      "password": "yourmom"
+      "email": "Josh@gmail.com",
+      "password": "Josh",
+      "id": 2
     }
   ],
   "myCollection": [
     {
       "id": 1,
-      "artistName": "Ryan Adams",
-      "albumTitle": "Gold",
-      "byDate": "2019-04-25",
-      "condition": "NM",
-      "image": "",
+      "artistName": "beatles ",
+      "albumTitle": "white album",
+      "year": "1968",
+      "condition": "Mint",
       "watchList": false,
-      "holyGrayl": false
-    },
-    {
-      "id": 2,
-      "artistName": "Pink Floyd",
-      "albumTitle": "Darkside of the Moon",
-      "byDate": "2019-04-25",
-      "image": "",
-      "condition": "EX",
-      "watchList": false,
-      "holyGrayl": false
+      "holyGrayl": false,
+      "userId": 2
     },
     {
       "id": 3,
-      "artistName": "Beatles",
-      "albumTitle": "Abbey Road",
-      "byDate": "2019-04-25",
-      "image": "",
-      "condition": "NM",
-      "watchList": false,
-      "holyGrayl": false
+      "artistName": "Steely Dan",
+      "albumTitle": "aja",
+      "year": "1976",
+      "condition": "mint",
+      "watchList": true,
+      "holyGrayl": false,
+      "userId": 2
     },
     {
-      "id": 4,
-      "artistName": "Bruce Springsteen",
-      "albumTitle": "Born in the USA",
+      "artistName": "Mars Volta",
+      "albumTitle": "Frances the Mute",
+      "year": "2003",
       "condition": "Mint",
       "watchList": false,
-      "holyGrayl": false
+      "holyGrayl": true,
+      "date": "2019-05-07T20:14:18.771Z",
+      "userId": 2,
+      "id": 4
     },
     {
-      "id": 5,
-      "artistName": "Yeah Yeah Yeah",
-      "albumTitle": "Gold Lion",
-      "condition": "vg",
-      "watchList": false,
-      "holyGrayl": false
-    },
-    {
-      "artistName": "Van Halen",
-      "albumTitle": "Van Halen II",
-      "year": "1982",
-      "condition": "vg +",
+      "artistName": "Kiss",
+      "albumTitle": " Kiss Alive",
+      "year": "1981",
+      "condition": "EX",
       "watchList": false,
       "holyGrayl": false,
-      "date": "2019-05-03T18:48:51.841Z",
-      "id": 6
+      "date": "2019-05-07T20:15:56.364Z",
+      "userId": 2,
+      "id": 5
     },
     {
-      "artistName": "Steely Dan",
-      "albumTitle": "greatest hits",
+      "artistName": "bruce springsteen",
+      "albumTitle": "born in the usa",
+      "year": "1980",
       "condition": "mint",
       "watchList": false,
       "holyGrayl": false,
-      "date": "2019-05-03T18:50:34.663Z",
-      "id": 7
-    },
-    {
-      "id": 8,
-      "artistName": "queen",
-      "albumTitle": " queen II",
-      "year": " 1985",
-      "condition": " poor",
-      "watchList": false,
-      "holyGrayl": false
-    },
-    {
-      "id": 9,
-      "artistName": "Queen",
-      "albumTitle": " Queen I",
-      "year": " 1976",
-      "condition": " vg+ ",
-      "watchList": false,
-      "holyGrayl": false
+      "date": "2019-05-07T20:26:40.964Z",
+      "userId": 2,
+      "id": 6
     }
   ]
 }

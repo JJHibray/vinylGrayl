@@ -1,12 +1,16 @@
 const remoteURL = "http://localhost:5002"
 
+
 export default {
   getOneRecord(id) {
     return fetch(`${remoteURL}/myCollection/${id}`).then(e => e.json())
   },
 getAllRecords() {
-    return fetch(`${remoteURL}/myCollection`).then(e => e.json())
-  },
+
+    return fetch(`${remoteURL}/myCollection`)
+    .then(r => r.json())
+    .then(e => e.filter(record => record.userId === parseInt(sessionStorage.getItem("userId")))
+    )},
 
 post(newAlbum) {
     return fetch(`${remoteURL}/myCollection`, {
