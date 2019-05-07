@@ -20,6 +20,8 @@ export default class CollectionForm extends Component {
 
     constructNewRecord = evt => {
         evt.preventDefault();
+        let userId = sessionStorage.getItem("userId")
+        userId = parseInt(userId)
         const record = {
         artistName: this.state.artistName,
         albumTitle: this.state.albumTitle,
@@ -27,7 +29,8 @@ export default class CollectionForm extends Component {
         condition: this.state.condition,
         watchList: this.state.watchList,
         holyGrayl: this.state.holyGrayl,
-        date: new Date()
+        date: new Date(),
+        userId: userId
 
     }
     this.props

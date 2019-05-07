@@ -19,9 +19,13 @@ handleFieldChange = evt => {
 updateExistingRecords = evt => {
     evt.preventDefault()
 
+    let userId = sessionStorage.getItem("userId")
+        userId = parseInt(userId)
+
     if (this.state.title === "") {
       window.alert("Please add record");
     } else {
+
       const editedRecords = {
         id: this.props.match.params.recordId,
         artistName: this.state.artistName,
@@ -29,7 +33,8 @@ updateExistingRecords = evt => {
         year: this.state.year,
         condition: this.state.condition,
         watchList: true,
-        holyGrayl: false
+        holyGrayl: false,
+        userId: userId
       };
   this.props.editRecord(editedRecords)
   .then(() => this.props.history.push("/watchlist"))

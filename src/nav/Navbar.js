@@ -17,6 +17,9 @@ class NavBar extends Component {
                     <li className="nav-item">
                         <Link className="nav-link" to="/holyGrayl">Holy Grayl</Link>
                     </li>
+                    <li className="nav-item">
+                        <Link href="/" onClick={() => sessionStorage.clear()} className="nav-link" to="/">Logout</Link>
+                    </li>
                 </ul>
             </nav>
         )

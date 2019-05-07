@@ -18,7 +18,8 @@ handleFieldChange = evt => {
 
 updateExistingRecords = evt => {
     evt.preventDefault()
-
+    let userId = sessionStorage.getItem("userId")
+        userId = parseInt(userId)
     if (this.state.title === "") {
       window.alert("Please add record");
     } else {
@@ -29,7 +30,8 @@ updateExistingRecords = evt => {
         year: this.state.year,
         condition: this.state.condition,
         watchList: false,
-        holyGrayl: true
+        holyGrayl: true,
+        userId: userId
       };
   this.props.editRecord(editedRecords)
   .then(() => this.props.history.push("/holyGrayl"))

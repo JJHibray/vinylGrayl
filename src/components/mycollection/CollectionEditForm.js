@@ -18,7 +18,8 @@ handleFieldChange = evt => {
 
 updateExistingRecords = evt => {
     evt.preventDefault()
-
+    let userId = sessionStorage.getItem("userId")
+    userId = parseInt(userId)
     if (this.state.title === "") {
       window.alert("Please add record");
     } else {
@@ -29,7 +30,8 @@ updateExistingRecords = evt => {
         year: this.state.year,
         condition: this.state.condition,
         watchList: false,
-        holyGrayl: false
+        holyGrayl: false,
+        userId: userId
       };
   this.props.editRecord(editedRecords)
   .then(() => this.props.history.push("/"))
@@ -86,7 +88,7 @@ render() { console.log(this.props.myCollection)
                 />
               </div>
           <div className="form-group">
-            <label htmlFor="condition">URL</label>
+            <label htmlFor="condition">Condition</label>
             <input
               type="text"
               required

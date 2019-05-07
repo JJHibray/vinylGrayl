@@ -6,15 +6,14 @@ export default class WatchList extends Component {
         watchList: true
     }
 
-
     handleAddToCollection = evt => {
         evt.preventDefault()
         let recordId = evt.target.id
         const patchedRecord = {
         id: parseInt(recordId),
-        watchList: false
+        watchList: false,
         }
-        console.log(patchedRecord)
+        console.log("test", patchedRecord)
         this.props.addToCollection(patchedRecord)
         .then(() => this.props.history.push("/watchList"))
      }
