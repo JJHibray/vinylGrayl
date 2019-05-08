@@ -11,6 +11,12 @@
       "email": "Josh@gmail.com",
       "password": "Josh",
       "id": 2
+    },
+    {
+      "name": "Kristen",
+      "email": "kristen@gmail.com",
+      "password": "kristen",
+      "id": 3
     }
   ],
   "myCollection": [
@@ -30,7 +36,7 @@
       "albumTitle": "aja",
       "year": "1976",
       "condition": "mint",
-      "watchList": true,
+      "watchList": false,
       "holyGrayl": false,
       "userId": 2
     },
@@ -40,7 +46,7 @@
       "year": "2003",
       "condition": "Mint",
       "watchList": false,
-      "holyGrayl": true,
+      "holyGrayl": false,
       "date": "2019-05-07T20:14:18.771Z",
       "userId": 2,
       "id": 4
@@ -66,6 +72,60 @@
       "date": "2019-05-07T20:26:40.964Z",
       "userId": 2,
       "id": 6
+    },
+    {
+      "artistName": "different record",
+      "albumTitle": "",
+      "year": "",
+      "condition": "",
+      "watchList": false,
+      "holyGrayl": false,
+      "date": "2019-05-08T19:18:49.647Z",
+      "userId": 1,
+      "id": 7
+    },
+    {
+      "artistName": "john record",
+      "albumTitle": "",
+      "year": "",
+      "condition": "",
+      "watchList": true,
+      "holyGrayl": false,
+      "date": "2019-05-08T19:19:21.107Z",
+      "userId": 1,
+      "id": 8
+    },
+    {
+      "artistName": "John grayl",
+      "albumTitle": "",
+      "year": "",
+      "condition": "",
+      "watchList": false,
+      "holyGrayl": true,
+      "date": "2019-05-08T19:19:30.204Z",
+      "userId": 1,
+      "id": 9
+    },
+    {
+      "artistName": "Van Halen",
+      "albumTitle": "Van Halen II",
+      "year": "1982",
+      "condition": "vg+",
+      "watchList": false,
+      "holyGrayl": false,
+      "date": "2019-05-08T19:23:55.609Z",
+      "userId": 2,
+      "id": 10
+    },
+    {
+      "id": 11,
+      "artistName": "Pink Floyd",
+      "albumTitle": "Darkside of the Moon",
+      "year": "1975",
+      "condition": "mint",
+      "watchList": true,
+      "holyGrayl": false,
+      "userId": 2
     }
   ]
 }
