@@ -90,6 +90,7 @@ addRecord = record => {
   });
 }
 
+
   postUser = (newUser) => {
     return UserManager.postUser(newUser)
 }
@@ -117,11 +118,12 @@ render() {
             }} />
         <Route exact path="/myCollection/new" render={(props) => {
             return <CollectionForm {...props} myCollection={this.state.myCollection}
-            addRecord={this.addRecord} />
+            addRecord={this.addRecord}/>
         }} />
         <Route
           path="/myCollection/:recordId(\d+)/edit" render={props => {
-            return <CollectionEditForm {...props} myCollection={this.state.articles} editRecord={this.editRecord}/>
+            return <CollectionEditForm {...props} myCollection={this.state.articles} editRecord={this.editRecord}
+            />
          }}
         />
         <Route exact path="/watchlist" render={(props) => {

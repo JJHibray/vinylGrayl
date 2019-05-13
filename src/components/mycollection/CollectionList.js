@@ -21,11 +21,12 @@ export default class CollectionList extends Component {
                  .map(record =>
                     <div key={record.id}>
                         <div>
-                        {record.artistName}
-                        {record.albumTitle}
-                        {record.year}
-                        {record.condition}
-                        {record.date}
+                        <img src={record.imageURL} className="img-fluid recordImage" alt="record Thumbnail"/>
+                        <h2>{record.artistName}</h2>
+                        <h3>{record.albumTitle}</h3>
+                        <p>{record.year}</p>
+                        <p>{record.condition}</p>
+                        <p>{record.date}</p>
                         <button
                                     onClick={() => this.props.deleteRecord(record.id)}
                                     className="card-delete">Delete</button>

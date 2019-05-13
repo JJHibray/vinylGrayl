@@ -41,17 +41,6 @@
       "userId": 2
     },
     {
-      "artistName": "Mars Volta",
-      "albumTitle": "Frances the Mute",
-      "year": "2003",
-      "condition": "Mint",
-      "watchList": false,
-      "holyGrayl": false,
-      "date": "2019-05-07T20:14:18.771Z",
-      "userId": 2,
-      "id": 4
-    },
-    {
       "artistName": "Kiss",
       "albumTitle": " Kiss Alive",
       "year": "1981",
@@ -107,24 +96,99 @@
       "id": 9
     },
     {
-      "artistName": "Van Halen",
-      "albumTitle": "Van Halen II",
-      "year": "1982",
-      "condition": "vg+",
-      "watchList": false,
-      "holyGrayl": false,
-      "date": "2019-05-08T19:23:55.609Z",
+      "artistName": "Pink Floyd",
+      "albumTitle": "Animals",
+      "year": "1968",
+      "date": "2019-05-10T05:40:30.559Z",
       "userId": 2,
-      "id": 10
+      "id": 12
     },
     {
-      "id": 11,
       "artistName": "Pink Floyd",
-      "albumTitle": "Darkside of the Moon",
-      "year": "1975",
-      "condition": "mint",
+      "albumTitle": "The Wall",
+      "year": "1970",
+      "condition": "Very Good",
+      "watchList": false,
+      "holyGrayl": false,
+      "date": "2019-05-10T06:02:32.093Z",
+      "userId": 2,
+      "id": 13
+    },
+    {
+      "artistName": "Highly Suspect",
+      "albumTitle": "Mister Asylum",
+      "year": "2016",
+      "condition": "Very Good",
+      "watchList": false,
+      "holyGrayl": false,
+      "date": "2019-05-10T06:05:09.557Z",
+      "userId": 2,
+      "id": 14
+    },
+    {
+      "artistName": "Pink Floyd",
+      "albumTitle": "Wish You Were Here",
+      "year": "1972",
+      "condition": "EX",
       "watchList": true,
       "holyGrayl": false,
+      "date": "2019-05-10T14:48:05.606Z",
+      "userId": 2,
+      "id": 15
+    },
+    {
+      "artistName": "Billie Eillish",
+      "albumTitle": "When We All Fall Asleep, Where Do We Go",
+      "year": "2019",
+      "condition": "Mint",
+      "watchList": false,
+      "holyGrayl": false,
+      "date": "2019-05-10T14:49:29.576Z",
+      "userId": 2,
+      "id": 16
+    },
+    {
+      "artistName": "Neil Young",
+      "albumTitle": "Harvest",
+      "year": "1974",
+      "condition": "Excellent",
+      "watchList": true,
+      "holyGrayl": false,
+      "date": "2019-05-10T14:49:54.962Z",
+      "userId": 2,
+      "id": 17
+    },
+    {
+      "id": 22,
+      "artistName": "Mars Volta ",
+      "albumTitle": " Frances the Mute",
+      "year": "2004",
+      "condition": "",
+      "watchList": false,
+      "holyGrayl": true,
+      "imageURL": "https://firebasestorage.googleapis.com/v0/b/vinyl-grayl.appspot.com/o/images%2Fdownload.png?alt=media&token=c83e7bab-1505-4129-9661-5bdc479bd3c3",
+      "userId": 2
+    },
+    {
+      "id": 23,
+      "artistName": "",
+      "albumTitle": "",
+      "year": "",
+      "condition": "",
+      "watchList": false,
+      "holyGrayl": false,
+      "imageURL": "https://firebasestorage.googleapis.com/v0/b/vinyl-grayl.appspot.com/o/images%2Fdownload.png?alt=media&token=120908cd-d015-4510-9161-aaa797463b22",
+      "userId": 2
+    },
+    {
+      "id": 24,
+      "artistName": "",
+      "albumTitle": "",
+      "year": "",
+      "condition": "",
+      "watchList": true,
+      "holyGrayl": false,
+      "imageURL": "https://firebasestorage.googleapis.com/v0/b/vinyl-grayl.appspot.com/o/images%2FMars%20Volta.jpg?alt=media&token=cd0b6592-4a41-4be1-91d8-6102952d003b",
       "userId": 2
     }
   ]
