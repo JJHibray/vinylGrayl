@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 
+
 export default class HolyGraylForm extends Component {
     // Set initial state
     state = {
@@ -7,6 +8,7 @@ export default class HolyGraylForm extends Component {
       albumTitle: "",
       year:"",
       condition: "",
+      imageURL:""
     };
 
     // Update state whenever an input field is edited
@@ -15,6 +17,42 @@ export default class HolyGraylForm extends Component {
       stateToChange[evt.target.id] = evt.target.value;
       this.setState(stateToChange);
     };
+
+    // handlePhoto = event => {
+    //   if (event.target.files[0]) {
+    //     const image = event.target.files[0]
+    //     this.setState({
+    //       imageURL: image
+    //     })
+    //   }
+    // }
+
+    // handleUpload = () => {
+    //   const image = this.state.imageURL
+    //   const uploadTask = storage.ref(`images/${image.name}`).put(image)
+    //   uploadTask.on("state_changed",
+    //   (snapshot) => {
+    //     this.setState({
+    //       loadMin: snapshot.bytesTransferred,
+    //       loadMax: snapshot.totalBytes
+    //     })
+    //   },
+    //   (error) => {
+
+    //   },
+    //   () => {
+    //     storage.ref("images").child(image.name).getDownloadURL().then(imageURL => {
+    //       this.setState({ imageURL })
+    //     })
+    //   }
+    //   )
+    // }
+
+    // handleImage = () => {
+    //   if(this.state.imageURL !== "") {
+    //     return <img className="img-fluid" src={this.state.imageURL} alt="albumCover" />
+    //   }
+    // }
 
     constructNewRecord = evt => {
         evt.preventDefault();
@@ -28,6 +66,7 @@ export default class HolyGraylForm extends Component {
         watchList: false,
         holyGrayl: true,
         date: new Date(),
+        imageURL: this.state.imageURL,
         userId: userId
 
     }
@@ -75,16 +114,36 @@ export default class HolyGraylForm extends Component {
                   placeholder="Year of Issue"
                 />
               </div>
-              <div className="form-group">
-                <label htmlFor="condition">Condition</label>
+              <div>
+        <label htmlFor="condition">
+          Select Album Condition:
+          <select value={this.state.value} onChange={this.handleFieldChange} id="condition">
+            <option value="Mint">Mint</option>
+            <option value="Excellent">Excellent</option>
+            <option value="Very Good">Very Good</option>
+            <option value="Good">Good</option>
+            <option value="Poor">Poor</option>
+          </select>
+        </label>
+      </div>
+              <div className="">
+                <label htmlFor="imageURL">Upload Album Cover Image</label>
                 <input
-                  type="text"
+                  type="file"
                   required
-                  className="form-control"
-                  onChange={this.handleFieldChange}
-                  id="condition"
-                  placeholder="Condition"
+                  className="label"
+                  onChange={this.props.handlePhoto}
+                  id="imageURL"
+                  placeholder="Upload Album Cover"
                 />
+                <button
+                type="button"
+                onClick={this.props.handleUpload}
+                className="btn btn-primary"
+              >
+                Upload
+              </button>
+              {this.props.handleImage()}
               </div>
               <button
                 type="submit"

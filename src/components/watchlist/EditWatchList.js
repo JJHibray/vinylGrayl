@@ -1,4 +1,5 @@
 import React, { Component } from "react"
+import { storage } from "../firebase/Firebase"
 import CollectionManager from "../../modules/CollectionManager";
 
 export default class EditWatchList extends Component {
@@ -7,7 +8,44 @@ state = {
     artistName:"",
     albumTitle:"",
     year:"",
-    condition:""
+    condition:"",
+    imageURL:""
+}
+
+handlePhoto = event => {
+  if (event.target.files[0]) {
+    const image = event.target.files[0]
+    this.setState({
+      imageURL: image
+    })
+  }
+}
+
+handleUpload = () => {
+  const image = this.state.imageURL
+  const uploadTask = storage.ref(`images/${image.name}`).put(image)
+  uploadTask.on("state_changed",
+  (snapshot) => {
+    this.setState({
+      loadMin: snapshot.bytesTransferred,
+      loadMax: snapshot.totalBytes
+    })
+  },
+  (error) => {
+
+  },
+  () => {
+    storage.ref("images").child(image.name).getDownloadURL().then(imageURL => {
+      this.setState({ imageURL })
+    })
+  }
+  )
+}
+
+handleImage = () => {
+  if(this.state.imageURL !== "") {
+    return <img className="img-fluid" src={this.state.imageURL} alt="albumCover" />
+  }
 }
 
 handleFieldChange = evt => {
@@ -34,6 +72,7 @@ updateExistingRecords = evt => {
         condition: this.state.condition,
         watchList: true,
         holyGrayl: false,
+        imageURL: this.state.imageURL,
         userId: userId
       };
   this.props.editRecord(editedRecords)
@@ -48,7 +87,8 @@ componentDidMount() {
         artistName: record.artistName,
         albumTitle: record.albumTitle,
         year: record.year,
-        condition: record.condition
+        condition: record.condition,
+        imageURL: record.imageURL
       });
     });
   }
@@ -90,17 +130,37 @@ render() { console.log(this.props.myCollection)
                   value= {this.state.year}
                 />
               </div>
-          <div className="form-group">
-            <label htmlFor="condition">URL</label>
-            <input
-              type="text"
-              required
-              className="form-control"
-              onChange={this.handleFieldChange}
-              id="condition"
-              value= {this.state.condition}
-            />
-          </div>
+              <div>
+        <label htmlFor="condition">
+          Select Album Condition:
+          <select value={this.state.value} onChange={this.handleFieldChange} id="condition">
+            <option value="Mint">Mint</option>
+            <option value="Excellent">Excellent</option>
+            <option value="Very Good">Very Good</option>
+            <option value="Good">Good</option>
+            <option value="Poor">Poor</option>
+          </select>
+        </label>
+      </div>
+      <div className="">
+                <label htmlFor="imageURL">Upload Album Cover Image</label>
+                <input
+                  type="file"
+                  required
+                  className="label"
+                  onChange={this.handlePhoto}
+                  id="imageURL"
+                  placeholder="Upload Album Cover"
+                />
+                <button
+                type="button"
+                onClick={this.handleUpload}
+                className="btn btn-primary"
+              >
+                Upload
+              </button>
+              {this.handleImage()}
+              </div>
           <button
             type="submit"
             onClick={this.updateExistingRecords}
