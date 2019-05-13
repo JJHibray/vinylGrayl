@@ -21,46 +21,15 @@
   ],
   "myCollection": [
     {
-      "id": 1,
-      "artistName": "beatles ",
-      "albumTitle": "white album",
-      "year": "1968",
-      "condition": "Mint",
-      "watchList": false,
-      "holyGrayl": false,
-      "userId": 2
-    },
-    {
-      "id": 3,
-      "artistName": "Steely Dan",
-      "albumTitle": "aja",
-      "year": "1976",
-      "condition": "mint",
-      "watchList": false,
-      "holyGrayl": false,
-      "userId": 2
-    },
-    {
-      "artistName": "Kiss",
-      "albumTitle": " Kiss Alive",
-      "year": "1981",
-      "condition": "EX",
-      "watchList": false,
-      "holyGrayl": false,
-      "date": "2019-05-07T20:15:56.364Z",
-      "userId": 2,
-      "id": 5
-    },
-    {
+      "id": 6,
       "artistName": "bruce springsteen",
       "albumTitle": "born in the usa",
-      "year": "1980",
+      "year": "1984",
       "condition": "mint",
       "watchList": false,
       "holyGrayl": false,
-      "date": "2019-05-07T20:26:40.964Z",
-      "userId": 2,
-      "id": 6
+      "imageURL": "https://firebasestorage.googleapis.com/v0/b/vinyl-grayl.appspot.com/o/images%2FBruceBorn1984.JPG?alt=media&token=02a1f669-a577-43d9-8b62-d946229ccaa3",
+      "userId": 2
     },
     {
       "artistName": "different record",
@@ -104,92 +73,84 @@
       "id": 12
     },
     {
+      "id": 13,
       "artistName": "Pink Floyd",
       "albumTitle": "The Wall",
       "year": "1970",
       "condition": "Very Good",
       "watchList": false,
       "holyGrayl": false,
-      "date": "2019-05-10T06:02:32.093Z",
-      "userId": 2,
-      "id": 13
+      "imageURL": "https://firebasestorage.googleapis.com/v0/b/vinyl-grayl.appspot.com/o/images%2Fpink%20floyd%20-%20the%20wall.jpg?alt=media&token=a88d6b42-85a4-44ee-af13-9d00034c14e8",
+      "userId": 2
     },
     {
+      "id": 14,
       "artistName": "Highly Suspect",
       "albumTitle": "Mister Asylum",
       "year": "2016",
       "condition": "Very Good",
       "watchList": false,
       "holyGrayl": false,
-      "date": "2019-05-10T06:05:09.557Z",
-      "userId": 2,
-      "id": 14
+      "imageURL": "https://firebasestorage.googleapis.com/v0/b/vinyl-grayl.appspot.com/o/images%2FHighly%20Suspect-MisterAsylum.jpg?alt=media&token=6599644b-4333-4159-b06d-78fdf485282c",
+      "userId": 2
     },
     {
+      "id": 15,
       "artistName": "Pink Floyd",
       "albumTitle": "Wish You Were Here",
       "year": "1972",
       "condition": "EX",
       "watchList": true,
       "holyGrayl": false,
-      "date": "2019-05-10T14:48:05.606Z",
-      "userId": 2,
-      "id": 15
+      "imageURL": "https://firebasestorage.googleapis.com/v0/b/vinyl-grayl.appspot.com/o/images%2F220px-Pink_Floyd%2C_Wish_You_Were_Here_(1975).png?alt=media&token=966e966f-cad2-44eb-88af-b8027e227bf0",
+      "userId": 2
     },
     {
-      "artistName": "Billie Eillish",
-      "albumTitle": "When We All Fall Asleep, Where Do We Go",
-      "year": "2019",
-      "condition": "Mint",
-      "watchList": false,
-      "holyGrayl": false,
-      "date": "2019-05-10T14:49:29.576Z",
-      "userId": 2,
-      "id": 16
-    },
-    {
+      "id": 17,
       "artistName": "Neil Young",
       "albumTitle": "Harvest",
       "year": "1974",
       "condition": "Excellent",
       "watchList": true,
       "holyGrayl": false,
-      "date": "2019-05-10T14:49:54.962Z",
-      "userId": 2,
-      "id": 17
+      "imageURL": "https://firebasestorage.googleapis.com/v0/b/vinyl-grayl.appspot.com/o/images%2FNeilYoungHarvestalbumcover.jpg?alt=media&token=82a07512-053c-4fa7-8d5e-ec0f4bb2fb66",
+      "userId": 2
     },
     {
-      "id": 22,
-      "artistName": "Mars Volta ",
+      "artistName": "The Mars Volta",
       "albumTitle": " Frances the Mute",
       "year": "2004",
       "condition": "",
       "watchList": false,
       "holyGrayl": true,
-      "imageURL": "https://firebasestorage.googleapis.com/v0/b/vinyl-grayl.appspot.com/o/images%2Fdownload.png?alt=media&token=c83e7bab-1505-4129-9661-5bdc479bd3c3",
-      "userId": 2
+      "date": "2019-05-13T23:32:20.363Z",
+      "imageURL": "https://firebasestorage.googleapis.com/v0/b/vinyl-grayl.appspot.com/o/images%2FMars%20Volta.jpg?alt=media&token=a04abd73-8729-4f56-ba42-9f03cebfad41",
+      "userId": 2,
+      "id": 18
     },
     {
-      "id": 23,
-      "artistName": "",
-      "albumTitle": "",
-      "year": "",
+      "artistName": "Sigur Ros",
+      "albumTitle": "Takk",
+      "year": "2003",
+      "condition": "",
+      "watchList": false,
+      "holyGrayl": true,
+      "date": "2019-05-13T23:32:50.392Z",
+      "imageURL": "https://firebasestorage.googleapis.com/v0/b/vinyl-grayl.appspot.com/o/images%2Fsigur%20ros%20-%20takk.jpg?alt=media&token=c4ca0d8e-dd35-402e-a062-c78a0da44964",
+      "userId": 2,
+      "id": 19
+    },
+    {
+      "artistName": "Pink Floyd",
+      "albumTitle": "Darkside of the Moon",
+      "year": "1972",
       "condition": "",
       "watchList": false,
       "holyGrayl": false,
-      "imageURL": "https://firebasestorage.googleapis.com/v0/b/vinyl-grayl.appspot.com/o/images%2Fdownload.png?alt=media&token=120908cd-d015-4510-9161-aaa797463b22",
-      "userId": 2
-    },
-    {
-      "id": 24,
-      "artistName": "",
-      "albumTitle": "",
-      "year": "",
-      "condition": "",
-      "watchList": true,
-      "holyGrayl": false,
-      "imageURL": "https://firebasestorage.googleapis.com/v0/b/vinyl-grayl.appspot.com/o/images%2FMars%20Volta.jpg?alt=media&token=cd0b6592-4a41-4be1-91d8-6102952d003b",
-      "userId": 2
+      "date": "2019-05-13T23:35:04.507Z",
+      "imageURL": "https://firebasestorage.googleapis.com/v0/b/vinyl-grayl.appspot.com/o/images%2FPink%20Floyd-Dark_Side_of_the_Moon.png?alt=media&token=4b45891e-bf87-45a7-b7de-d79d8431bf86",
+      "userId": 2,
+      "id": 20
     }
   ]
 }

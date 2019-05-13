@@ -1,4 +1,6 @@
 import React, { Component } from "react";
+import { storage } from "../firebase/Firebase"
+
 
 
 export default class HolyGraylForm extends Component {
@@ -18,41 +20,41 @@ export default class HolyGraylForm extends Component {
       this.setState(stateToChange);
     };
 
-    // handlePhoto = event => {
-    //   if (event.target.files[0]) {
-    //     const image = event.target.files[0]
-    //     this.setState({
-    //       imageURL: image
-    //     })
-    //   }
-    // }
+    handlePhoto = event => {
+      if (event.target.files[0]) {
+        const image = event.target.files[0]
+        this.setState({
+          imageURL: image
+        })
+      }
+    }
 
-    // handleUpload = () => {
-    //   const image = this.state.imageURL
-    //   const uploadTask = storage.ref(`images/${image.name}`).put(image)
-    //   uploadTask.on("state_changed",
-    //   (snapshot) => {
-    //     this.setState({
-    //       loadMin: snapshot.bytesTransferred,
-    //       loadMax: snapshot.totalBytes
-    //     })
-    //   },
-    //   (error) => {
+    handleUpload = () => {
+      const image = this.state.imageURL
+      const uploadTask = storage.ref(`images/${image.name}`).put(image)
+      uploadTask.on("state_changed",
+      (snapshot) => {
+        this.setState({
+          loadMin: snapshot.bytesTransferred,
+          loadMax: snapshot.totalBytes
+        })
+      },
+      (error) => {
 
-    //   },
-    //   () => {
-    //     storage.ref("images").child(image.name).getDownloadURL().then(imageURL => {
-    //       this.setState({ imageURL })
-    //     })
-    //   }
-    //   )
-    // }
+      },
+      () => {
+        storage.ref("images").child(image.name).getDownloadURL().then(imageURL => {
+          this.setState({ imageURL })
+        })
+      }
+      )
+    }
 
-    // handleImage = () => {
-    //   if(this.state.imageURL !== "") {
-    //     return <img className="img-fluid" src={this.state.imageURL} alt="albumCover" />
-    //   }
-    // }
+    handleImage = () => {
+      if(this.state.imageURL !== "") {
+        return <img className="img-fluid" src={this.state.imageURL} alt="albumCover" />
+      }
+    }
 
     constructNewRecord = evt => {
         evt.preventDefault();
@@ -132,18 +134,18 @@ export default class HolyGraylForm extends Component {
                   type="file"
                   required
                   className="label"
-                  onChange={this.props.handlePhoto}
+                  onChange={this.handlePhoto}
                   id="imageURL"
                   placeholder="Upload Album Cover"
                 />
                 <button
                 type="button"
-                onClick={this.props.handleUpload}
+                onClick={this.handleUpload}
                 className="btn btn-primary"
               >
                 Upload
               </button>
-              {this.props.handleImage()}
+              {this.handleImage()}
               </div>
               <button
                 type="submit"
