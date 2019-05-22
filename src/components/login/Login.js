@@ -46,7 +46,7 @@ let userLogin = await promise.find(user =>
 
 render(){
 return(
-    <div>
+    <div className="header">
         <form onSubmit={this.handleLogin}>
             <h1 className="LoginEmail">Sign In</h1>
             <label>

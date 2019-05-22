@@ -120,6 +120,7 @@ export default class HolyGraylForm extends Component {
         <label htmlFor="condition">
           Select Album Condition:
           <select value={this.state.value} onChange={this.handleFieldChange} id="condition">
+          <option value=""></option>
             <option value="Mint">Mint</option>
             <option value="Excellent">Excellent</option>
             <option value="Very Good">Very Good</option>
