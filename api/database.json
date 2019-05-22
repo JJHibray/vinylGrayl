@@ -17,20 +17,15 @@
       "email": "kristen@gmail.com",
       "password": "kristen",
       "id": 3
+    },
+    {
+      "name": "Rob",
+      "email": "Rob@gmail.com",
+      "password": "Rob",
+      "id": 4
     }
   ],
   "myCollection": [
-    {
-      "id": 6,
-      "artistName": "bruce springsteen",
-      "albumTitle": "born in the usa",
-      "year": "1984",
-      "condition": "mint",
-      "watchList": false,
-      "holyGrayl": false,
-      "imageURL": "https://firebasestorage.googleapis.com/v0/b/vinyl-grayl.appspot.com/o/images%2FBruceBorn1984.JPG?alt=media&token=02a1f669-a577-43d9-8b62-d946229ccaa3",
-      "userId": 2
-    },
     {
       "artistName": "different record",
       "albumTitle": "",
@@ -73,17 +68,6 @@
       "id": 12
     },
     {
-      "id": 13,
-      "artistName": "Pink Floyd",
-      "albumTitle": "The Wall",
-      "year": "1970",
-      "condition": "Very Good",
-      "watchList": false,
-      "holyGrayl": false,
-      "imageURL": "https://firebasestorage.googleapis.com/v0/b/vinyl-grayl.appspot.com/o/images%2Fpink%20floyd%20-%20the%20wall.jpg?alt=media&token=a88d6b42-85a4-44ee-af13-9d00034c14e8",
-      "userId": 2
-    },
-    {
       "id": 14,
       "artistName": "Highly Suspect",
       "albumTitle": "Mister Asylum",
@@ -95,62 +79,236 @@
       "userId": 2
     },
     {
-      "id": 15,
-      "artistName": "Pink Floyd",
-      "albumTitle": "Wish You Were Here",
-      "year": "1972",
-      "condition": "EX",
-      "watchList": true,
-      "holyGrayl": false,
-      "imageURL": "https://firebasestorage.googleapis.com/v0/b/vinyl-grayl.appspot.com/o/images%2F220px-Pink_Floyd%2C_Wish_You_Were_Here_(1975).png?alt=media&token=966e966f-cad2-44eb-88af-b8027e227bf0",
-      "userId": 2
-    },
-    {
-      "id": 17,
-      "artistName": "Neil Young",
-      "albumTitle": "Harvest",
-      "year": "1974",
-      "condition": "Excellent",
-      "watchList": true,
-      "holyGrayl": false,
-      "imageURL": "https://firebasestorage.googleapis.com/v0/b/vinyl-grayl.appspot.com/o/images%2FNeilYoungHarvestalbumcover.jpg?alt=media&token=82a07512-053c-4fa7-8d5e-ec0f4bb2fb66",
-      "userId": 2
-    },
-    {
-      "artistName": "The Mars Volta",
-      "albumTitle": " Frances the Mute",
-      "year": "2004",
-      "condition": "",
-      "watchList": false,
-      "holyGrayl": true,
-      "date": "2019-05-13T23:32:20.363Z",
-      "imageURL": "https://firebasestorage.googleapis.com/v0/b/vinyl-grayl.appspot.com/o/images%2FMars%20Volta.jpg?alt=media&token=a04abd73-8729-4f56-ba42-9f03cebfad41",
-      "userId": 2,
-      "id": 18
-    },
-    {
-      "artistName": "Sigur Ros",
-      "albumTitle": "Takk",
-      "year": "2003",
-      "condition": "",
-      "watchList": false,
-      "holyGrayl": true,
-      "date": "2019-05-13T23:32:50.392Z",
-      "imageURL": "https://firebasestorage.googleapis.com/v0/b/vinyl-grayl.appspot.com/o/images%2Fsigur%20ros%20-%20takk.jpg?alt=media&token=c4ca0d8e-dd35-402e-a062-c78a0da44964",
-      "userId": 2,
-      "id": 19
-    },
-    {
+      "id": 20,
       "artistName": "Pink Floyd",
       "albumTitle": "Darkside of the Moon",
       "year": "1972",
-      "condition": "",
+      "condition": "Excellent",
       "watchList": false,
       "holyGrayl": false,
-      "date": "2019-05-13T23:35:04.507Z",
       "imageURL": "https://firebasestorage.googleapis.com/v0/b/vinyl-grayl.appspot.com/o/images%2FPink%20Floyd-Dark_Side_of_the_Moon.png?alt=media&token=4b45891e-bf87-45a7-b7de-d79d8431bf86",
+      "userId": 2
+    },
+    {
+      "id": 25,
+      "artistName": "Beatles",
+      "albumTitle": "Rubber Soul",
+      "year": "1972",
+      "condition": "Excellent",
+      "watchList": false,
+      "holyGrayl": false,
+      "imageURL": "https://firebasestorage.googleapis.com/v0/b/vinyl-grayl.appspot.com/o/images%2Frubber%20soul.jpg?alt=media&token=653f024f-792d-45c8-956a-34f24ccc73ee",
+      "userId": 2
+    },
+    {
+      "id": 27,
+      "artistName": "Billie Eillish",
+      "albumTitle": "When we all fall asleep",
+      "year": "2018",
+      "condition": "Excellent",
+      "watchList": true,
+      "holyGrayl": false,
+      "imageURL": "https://firebasestorage.googleapis.com/v0/b/vinyl-grayl.appspot.com/o/images%2F220px-When_We_All_Fall_Asleep%2C_Where_Do_We_Go_.png?alt=media&token=b271bef4-ce0e-4e23-ab92-51f15f3a9a7f",
+      "userId": 2
+    },
+    {
+      "id": 28,
+      "artistName": "Sigur Ros",
+      "albumTitle": "Takk",
+      "year": "2003",
+      "condition": "Excellent",
+      "watchList": false,
+      "holyGrayl": true,
+      "imageURL": "https://firebasestorage.googleapis.com/v0/b/vinyl-grayl.appspot.com/o/images%2Fsigur%20ros%20-%20takk.jpg?alt=media&token=11e5695f-c703-4296-ae8c-e398ee492534",
+      "userId": 2
+    },
+    {
+      "id": 29,
+      "artistName": "Mars Volta ",
+      "albumTitle": "Frances the Mute",
+      "year": "2004",
+      "condition": "Excellent",
+      "watchList": false,
+      "holyGrayl": true,
+      "imageURL": "https://firebasestorage.googleapis.com/v0/b/vinyl-grayl.appspot.com/o/images%2FMars%20Volta.jpg?alt=media&token=1bd97c58-8aac-4880-9f60-8edcdbf92392",
+      "userId": 2
+    },
+    {
+      "artistName": "Ryan Adams",
+      "albumTitle": "Heartbreaker",
+      "year": "2000",
+      "condition": "Excellent",
+      "watchList": true,
+      "holyGrayl": false,
+      "date": "2019-05-21T02:51:36.004Z",
+      "imageURL": "https://firebasestorage.googleapis.com/v0/b/vinyl-grayl.appspot.com/o/images%2F220px-RyanAdamsHeartbreaker.jpg?alt=media&token=171183c1-fe8e-4f30-95dd-15850dfa5078",
       "userId": 2,
-      "id": 20
+      "id": 30
+    },
+    {
+      "artistName": "Def Leppard",
+      "albumTitle": "Hysteria",
+      "year": "1987",
+      "condition": "Excellent",
+      "watchList": true,
+      "holyGrayl": false,
+      "date": "2019-05-21T02:53:25.704Z",
+      "imageURL": "https://firebasestorage.googleapis.com/v0/b/vinyl-grayl.appspot.com/o/images%2F220px-Def_Leppard_-_Hysteria_(vinyl_version).jpg?alt=media&token=a1e473cc-7454-4f9e-a781-0302b7d2be27",
+      "userId": 2,
+      "id": 31
+    },
+    {
+      "artistName": "Pink Floyd",
+      "albumTitle": "Wish You Were Here",
+      "year": "1975",
+      "condition": "Excellent",
+      "watchList": true,
+      "holyGrayl": false,
+      "date": "2019-05-21T02:56:20.528Z",
+      "imageURL": "https://firebasestorage.googleapis.com/v0/b/vinyl-grayl.appspot.com/o/images%2F220px-Pink_Floyd%2C_Wish_You_Were_Here_(1975).png?alt=media&token=3492aa21-9149-4b60-8a3a-80edcaca0ac9",
+      "userId": 2,
+      "id": 32
+    },
+    {
+      "artistName": "Sinatra",
+      "albumTitle": "At the Sands",
+      "year": "1966",
+      "condition": "Mint",
+      "watchList": false,
+      "holyGrayl": false,
+      "date": "2019-05-21T02:58:28.965Z",
+      "imageURL": "https://firebasestorage.googleapis.com/v0/b/vinyl-grayl.appspot.com/o/images%2FSinatraAtTheSands.jpg?alt=media&token=943b0ce8-4830-4a02-abde-5c3caa00e156",
+      "userId": 2,
+      "id": 33
+    },
+    {
+      "artistName": "Steely Dan",
+      "albumTitle": "Aja",
+      "year": "1977",
+      "condition": "Excellent",
+      "watchList": false,
+      "holyGrayl": false,
+      "date": "2019-05-21T03:00:07.545Z",
+      "imageURL": "https://firebasestorage.googleapis.com/v0/b/vinyl-grayl.appspot.com/o/images%2FAja_album_cover.jpg?alt=media&token=27e44aec-c2b8-4c4a-8cc0-b5fa0e5c3d6a",
+      "userId": 2,
+      "id": 34
+    },
+    {
+      "artistName": "Pink Floyd",
+      "albumTitle": "The Wall",
+      "year": "1979",
+      "condition": "Excellent",
+      "watchList": false,
+      "holyGrayl": false,
+      "date": "2019-05-21T03:09:19.338Z",
+      "imageURL": "https://firebasestorage.googleapis.com/v0/b/vinyl-grayl.appspot.com/o/images%2F220px-PinkFloydAnotherBrickCover.jpg?alt=media&token=3b7a659b-f106-46c9-be15-6352e16d7aac",
+      "userId": 2,
+      "id": 35
+    },
+    {
+      "artistName": "The Beatles",
+      "albumTitle": "Abbey Road",
+      "year": "1969",
+      "condition": "Mint",
+      "watchList": false,
+      "holyGrayl": false,
+      "date": "2019-05-21T03:10:18.621Z",
+      "imageURL": "https://firebasestorage.googleapis.com/v0/b/vinyl-grayl.appspot.com/o/images%2F220px-Beatles_-_Abbey_Road.jpg?alt=media&token=bf2205f1-4f6c-4d0d-b99c-11a28357a8d5",
+      "userId": 2,
+      "id": 36
+    },
+    {
+      "artistName": "Steely Dan",
+      "albumTitle": "Greatest Hits",
+      "year": "1978",
+      "condition": "Very Good",
+      "watchList": false,
+      "holyGrayl": false,
+      "date": "2019-05-21T03:11:55.454Z",
+      "imageURL": "https://firebasestorage.googleapis.com/v0/b/vinyl-grayl.appspot.com/o/images%2F220px-Greatest_Hits_(Steely_Dan_album).jpg?alt=media&token=1d98ae56-ffe1-4765-b63c-ed1ef858ed4f",
+      "userId": 2,
+      "id": 37
+    },
+    {
+      "id": 38,
+      "artistName": "Neutral Milk Hotel",
+      "albumTitle": "Aeroplane over the Sea",
+      "year": "1998",
+      "condition": "Mint",
+      "watchList": false,
+      "holyGrayl": false,
+      "imageURL": "https://firebasestorage.googleapis.com/v0/b/vinyl-grayl.appspot.com/o/images%2F220px-In_the_aeroplane_over_the_sea_album_cover_copy.jpg?alt=media&token=df1a38df-15d6-428f-9fea-a4dc5c045c55",
+      "userId": 2
+    },
+    {
+      "artistName": "Jason Isbell",
+      "albumTitle": "Southeastern",
+      "year": "2014",
+      "condition": "Mint",
+      "watchList": false,
+      "holyGrayl": false,
+      "date": "2019-05-21T03:15:45.562Z",
+      "imageURL": "https://firebasestorage.googleapis.com/v0/b/vinyl-grayl.appspot.com/o/images%2FSoutheasternjasonisbell.jpg?alt=media&token=55eb54da-81f1-43a3-b390-b82d98668420",
+      "userId": 2,
+      "id": 40
+    },
+    {
+      "artistName": "Jason Isbell",
+      "albumTitle": "Nashville Sound",
+      "year": "2018",
+      "condition": "Mint",
+      "watchList": false,
+      "holyGrayl": false,
+      "date": "2019-05-21T03:19:18.723Z",
+      "imageURL": "https://firebasestorage.googleapis.com/v0/b/vinyl-grayl.appspot.com/o/images%2F220px-The_Nashville_Sound_-_Jason_Isbell_and_the_400_Unit.jpg?alt=media&token=243aa198-d0a5-4501-8a30-015a70e69063",
+      "userId": 2,
+      "id": 41
+    },
+    {
+      "id": 42,
+      "artistName": "Jason Isbell",
+      "albumTitle": "Something More Than Free",
+      "year": "2016",
+      "condition": "Mint",
+      "watchList": false,
+      "holyGrayl": false,
+      "imageURL": "https://firebasestorage.googleapis.com/v0/b/vinyl-grayl.appspot.com/o/images%2FSomethingmorejasonisbell.jpg?alt=media&token=7f474e2c-dac7-4a91-9987-8ec04ffe3ad0",
+      "userId": 2
+    },
+    {
+      "artistName": "Highly Suspect",
+      "albumTitle": "The Boy Who Died Wolf",
+      "year": "2016",
+      "condition": "Mint",
+      "watchList": false,
+      "holyGrayl": false,
+      "date": "2019-05-21T03:26:32.210Z",
+      "imageURL": "https://firebasestorage.googleapis.com/v0/b/vinyl-grayl.appspot.com/o/images%2FHighly%20Suspect%20-%20TheBoyWhoDiedWolf.jpg?alt=media&token=d21315e4-5680-468f-b799-5801d98e7d7a",
+      "userId": 2,
+      "id": 43
+    },
+    {
+      "artistName": "Bon Iver",
+      "albumTitle": "Bon Iver",
+      "year": "2011",
+      "condition": "Mint",
+      "watchList": false,
+      "holyGrayl": false,
+      "date": "2019-05-21T03:29:39.181Z",
+      "imageURL": "https://firebasestorage.googleapis.com/v0/b/vinyl-grayl.appspot.com/o/images%2FBon_iver.jpg?alt=media&token=2a24a219-4803-483a-9ea0-065b307d2bcf",
+      "userId": 2,
+      "id": 44
+    },
+    {
+      "id": 45,
+      "artistName": "Led Zeppelin",
+      "albumTitle": "Houses of the Holy",
+      "year": "1973",
+      "condition": "Excellent",
+      "watchList": false,
+      "holyGrayl": false,
+      "imageURL": "https://firebasestorage.googleapis.com/v0/b/vinyl-grayl.appspot.com/o/images%2FHouses_of_the_Holy.jpg?alt=media&token=ab72aa47-085d-46d1-b833-12697902e957",
+      "userId": 2
     }
   ]
 }

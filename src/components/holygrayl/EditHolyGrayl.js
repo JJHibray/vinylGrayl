@@ -131,6 +131,7 @@ render() { console.log(this.props.myCollection)
         <label htmlFor="condition">
           Select Album Condition:
           <select value={this.state.value} onChange={this.handleFieldChange} id="condition">
+          <option value=""></option>
             <option value="Mint">Mint</option>
             <option value="Excellent">Excellent</option>
             <option value="Very Good">Very Good</option>

@@ -4,12 +4,15 @@ import ApplicationViews from "./components/ApplicationViews";
 
 
 
+
 class VinylGrayl extends Component {
   render() {
     return (
       <React.Fragment>
         <Navbar />
+        <div className="Vinyl">
         <ApplicationViews />
+        </div>
       </React.Fragment>
     );
   }
